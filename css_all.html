@@ -55,6 +55,23 @@
         .font_family{
             font-family: "標楷體" ;
         }
+        /* Link連結 */
+        /* 未訪問 */
+        .a_link:link{
+            color:green;
+        }
+        /* 訪問過 */
+        .a_link:visited{
+            color:red;
+        }
+        /* 移入 */
+        .a_link:hover{
+            color:yellow;
+        }
+        /* 點下去 */
+        .a_link:active{
+            color:blue;
+        }
     </style>
 </head>
 <body>
@@ -64,5 +81,6 @@
     <div class="font_style font_weight font_size font_family">
         font字型
     </div>
+    <a href="#" class="a_link">Link連結</a>
 </body>
 </html>
