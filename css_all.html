@@ -81,6 +81,34 @@
             /* 圖片 */
             list-style-image: url('list.png');
         }
+        /* table表格 */
+        /* 合併框線 */
+        .table_css{
+            border-collapse: collapse;
+        }
+        td{
+            /* 左右對齊 */
+            text-align: center;
+            /* 上下對齊 */
+            vertical-align: center;
+        }
+        /* 奇數行 */
+        tr:nth-child(odd){
+            color:red;
+        }
+        /* 偶數行 */
+        tr:nth-child(even){
+            color:blue;
+        }
+        /* 框線 */
+        .div_border{
+            /* 邊框粗細 */
+            border-width: 1px;
+            /* 邊框類型 */
+            border-style: solid;
+            /* 邊框顏色 */
+            border-color: red;
+        }
     </style>
 </head>
 <body>
@@ -96,5 +124,25 @@
         <li>2</li>
         <li>3</li>
     </ol>
+    <table class="table_css" border="1" cellpadding="0" cellspacing="0" width="300" height="300">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+    <div class="div_border">
+        border邊框
+    </div>
 </body>
 </html>
